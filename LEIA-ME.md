@@ -14,7 +14,7 @@ Ao atualizar o conteúdo, aumente o número em `CACHE = 'enemlab-v1'` no `sw.js`
 Edite só o arquivo `data/d-<disciplina>.js`. Cada tema segue o modelo de `data/d-matematica.js`:
 
 - `id` (a-z, 0-9, hífen), `nome`, `incidencia` (`alta` | `media` | `baixa`), `resumo`
-- `conceitos`: `[{ titulo, texto }]` (use `**negrito**`; parágrafos separados por linha em branco; linhas com `- ` viram lista)
+- `conceitos`: `[{ titulo, texto }]` (use `**negrito**` e `*itálico*`; parágrafos separados por linha em branco; linhas com `- ` viram lista)
 - `pegadinhas`, `dicas`: listas de frases
 - `exemplo`: `{ enunciado, resolucao }`
 - `flashcards`: `[{ f, v }]` (frente e verso)

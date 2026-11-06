@@ -34,13 +34,15 @@
     return n;
   };
 
-  /* Texto com marcação mínima: **negrito**, `código` e quebras de linha */
+  /* Texto com marcação mínima: **negrito**, *itálico*, `código` e quebras de linha */
   U.rich = function (s) {
     var frag = document.createDocumentFragment();
-    String(s).split(/(\*\*[^*]+\*\*|`[^`]+`)/g).forEach(function (part) {
+    String(s).split(/(\*\*[^*]+\*\*|\*[^*\n]+\*|`[^`]+`)/g).forEach(function (part) {
       if (!part) return;
       if (part.slice(0, 2) === '**' && part.slice(-2) === '**' && part.length > 4) {
         frag.appendChild(U.el('strong', null, part.slice(2, -2)));
+      } else if (part.charAt(0) === '*' && part.slice(-1) === '*' && part.length > 2 && part.charAt(1) !== '*') {
+        frag.appendChild(U.el('em', null, part.slice(1, -1)));
       } else if (part.charAt(0) === '`' && part.slice(-1) === '`' && part.length > 2) {
         frag.appendChild(U.el('code', null, part.slice(1, -1)));
       } else {

@@ -68,7 +68,9 @@
         link('#/dicas', 'shortcut', [el('span', { class: 'em' }, '💡'), 'Dicas', el('small', null, 'Estudo, prova, redação')])));
 
     ENEM.areas.forEach(function (a) {
-      out.push(el('h2', { class: 'area-title', dataset: { area: a.id } }, a.emoji + ' ' + a.curto));
+      var temasArea = ENEM.discDaArea(a.id).reduce(function (acc, d) { return acc.concat(d.temas); }, []);
+      out.push(el('h2', { class: 'area-title', dataset: { area: a.id } }, a.emoji + ' ' + a.curto,
+        temasArea.length ? el('a', { href: '#/area/' + a.id, class: 'btn sm ghost', style: 'margin-left:auto' }, 'Praticar a área') : null));
       out.push(el('div', { class: 'grid' }, ENEM.discDaArea(a.id).map(function (d) {
         var c = ENEM.contagem(d.temas);
         return el('a', { href: '#/disc/' + d.id, class: 'disc-card' + (temConteudo(d) ? '' : ' soon'), dataset: { area: d.area } },
@@ -125,6 +127,30 @@
           el('div', { class: 't-sub' }, U.plural(t.quiz.length, 'questão', 'questões') + ' · ' + U.plural(t.flashcards.length, 'cartão', 'cartões'))),
         el('div', null, Store.visto(t.key) ? el('span', { class: 'badge visto' }, '✔ visto') : null, el('span', { class: 'badge inc-' + t.incidencia }, incLabel(t.incidencia)))));
     });
+    return out;
+  }
+
+  function telaArea(id) {
+    var a = ENEM.area(id);
+    if (!a) return naoEncontrado();
+    var discs = ENEM.discDaArea(id).filter(temConteudo);
+    var temas = discs.reduce(function (acc, d) { return acc.concat(d.temas); }, []);
+    var out = [
+      el('div', { class: 'crumb' }, link('#/', '', 'Início'), ' › ', a.curto),
+      el('div', { class: 'disc-head', dataset: { area: id } }, el('h1', null, a.emoji + ' ' + a.nome),
+        el('p', null, 'Misture todas as disciplinas da área: é assim que a prova cobra.'))
+    ];
+    if (!temas.length) { out.push(el('div', { class: 'card empty' }, '🚧 Esta área ainda será alimentada com conteúdo.')); return out; }
+    out.push(el('div', { class: 'card', dataset: { area: id } },
+      el('h2', null, 'Praticar a área inteira'),
+      atividades(temas, 'area.' + id, a.curto, function () { render(); })));
+    out.push(el('h2', null, 'Disciplinas'));
+    out.push(el('div', { class: 'grid' }, discs.map(function (d) {
+      var c = ENEM.contagem(d.temas);
+      return el('a', { href: '#/disc/' + d.id, class: 'disc-card', dataset: { area: d.area } },
+        el('span', { class: 'em' }, d.emoji), el('h3', null, d.nome),
+        el('div', { class: 'meta' }, U.plural(c.temas, 'tema', 'temas') + ' · ' + U.plural(c.quiz, 'questão', 'questões')));
+    })));
     return out;
   }
 
@@ -295,6 +321,7 @@
     try {
       if (r === '') conteudo = telaInicio();
       else if (r === 'disc') conteudo = telaDisc(h[1]);
+      else if (r === 'area') conteudo = telaArea(h[1]);
       else if (r === 'tema') conteudo = telaTema(h[1], h[2]);
       else if (r === 'misto') conteudo = telaMisto();
       else if (r === 'revisao') conteudo = telaRevisao();

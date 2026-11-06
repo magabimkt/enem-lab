@@ -88,7 +88,7 @@ main { max-width: 920px; margin: 0 auto; padding: 18px 16px 90px; }
 .shortcut .em { font-size: 1.5rem; display: block; margin-bottom: .2rem; }
 .shortcut small { display: block; color: var(--mut); }
 
-.area-title { display: flex; align-items: center; gap: .5rem; margin: 22px 0 8px; color: var(--ac); }
+.area-title { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem; margin: 22px 0 8px; color: var(--ac); }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
 .disc-card {
   display: block; text-decoration: none; color: var(--tx); background: var(--card); border: 1px solid var(--line);
