@@ -62,49 +62,57 @@
           q: 'Um carro dobra a velocidade. Sua energia cinética',
           alt: ['quadruplica', 'dobra', 'fica pela metade', 'permanece igual', 'triplica'],
           c: 0, dif: 'facil',
-          exp: 'Como Ec depende de v², dobrar a velocidade multiplica a energia por quatro.'
+          exp: 'Como Ec depende de v², dobrar a velocidade multiplica a energia por quatro.',
+          res: '- Fórmula: Ec = m · v² ÷ 2.\n- Se a velocidade dobra (v → 2v): Ec\' = m · (2v)² ÷ 2 = 4 · (m · v² ÷ 2).\n- A energia cinética **quadruplica**.\n- ⚠️ A velocidade está elevada ao quadrado; por isso não é só o dobro.'
         },
         {
           q: 'Um aparelho de 2.000 W funciona por 3 horas. A energia consumida é de',
           alt: ['6 kWh', '2 kWh', '3 kWh', '600 kWh', '0,6 kWh'],
           c: 0, dif: 'facil',
-          exp: '2 kW × 3 h = 6 kWh.'
+          exp: '2 kW × 3 h = 6 kWh.',
+          res: '- Converta a potência: 2.000 W = 2 kW.\n- Energia (kWh) = potência (kW) × tempo (h).\n- E = 2 × 3 = **6 kWh**.'
         },
         {
           q: 'Em uma usina hidrelétrica, a sequência de transformações de energia é',
           alt: ['potencial da água, cinética nas turbinas e elétrica no gerador', 'química do combustível, térmica e elétrica', 'solar, química e potencial', 'nuclear, térmica e cinética da água', 'elétrica, mecânica e potencial'],
           c: 0, dif: 'medio',
-          exp: 'A queda da água converte energia potencial em movimento das turbinas e depois em eletricidade.'
+          exp: 'A queda da água converte energia potencial em movimento das turbinas e depois em eletricidade.',
+          res: '- Siga a energia da água: no alto da represa ela tem **energia potencial**.\n- Ao cair, vira energia **cinética** e faz girar a turbina.\n- A turbina move o gerador, que produz energia **elétrica**.'
         },
         {
           q: 'Uma máquina recebe 400 J e realiza 100 J de trabalho útil. O rendimento é de',
           alt: ['25%', '75%', '40%', '100%', '4%'],
           c: 0, dif: 'medio',
-          exp: 'η = 100 ÷ 400 = 0,25, ou 25%. O restante é dissipado, principalmente como calor.'
+          exp: 'η = 100 ÷ 400 = 0,25, ou 25%. O restante é dissipado, principalmente como calor.',
+          res: '- Rendimento = energia útil ÷ energia total.\n- η = 100 ÷ 400 = 0,25.\n- η = **25%**. Os outros 300 J são dissipados, em geral como calor.'
         },
         {
           q: 'Quando um corpo desliza com atrito e para, a energia mecânica inicial',
           alt: ['se transforma em energia térmica, sem desaparecer', 'é totalmente destruída', 'se converte em massa', 'é criada a partir do nada', 'permanece como energia cinética'],
           c: 0, dif: 'medio',
-          exp: 'A energia total se conserva; o atrito converte parte dela em calor.'
+          exp: 'A energia total se conserva; o atrito converte parte dela em calor.',
+          res: '- A energia **não desaparece** (conservação da energia).\n- O atrito converte a energia cinética em calor: o corpo e o piso esquentam um pouco.\n- Logo, a energia se transforma em **energia térmica**.'
         },
         {
           q: 'Trocar lâmpadas incandescentes por LED reduz o consumo porque as LED',
           alt: ['têm maior rendimento e transformam menos energia em calor', 'produzem energia a partir do ar ambiente', 'têm potência muito maior que as demais', 'dispensam o uso da eletricidade da rede', 'violam o princípio da conservação da energia'],
           c: 0, dif: 'medio',
-          exp: 'Com maior rendimento luminoso, a mesma iluminação exige menos potência.'
+          exp: 'Com maior rendimento luminoso, a mesma iluminação exige menos potência.',
+          res: '- A incandescente converte a maior parte da energia em **calor** e só uma pequena fração em luz.\n- A LED tem **maior rendimento**: mais luz para a mesma energia.\n- Para a mesma iluminação, a LED precisa de menos potência e, portanto, consome menos.'
         },
         {
           q: 'A unidade kWh, presente na conta de luz, é uma unidade de',
           alt: ['energia', 'potência', 'tensão', 'corrente elétrica', 'resistência'],
           c: 0, dif: 'dificil',
-          exp: 'kWh = potência × tempo, portanto é energia.'
+          exp: 'kWh = potência × tempo, portanto é energia.',
+          res: '- kWh = quilowatt (potência) × hora (tempo).\n- Potência × tempo = **energia**.\n- Por isso o kWh é unidade de energia, não de potência.'
         },
         {
           q: 'Uma bola de 0,5 kg é solta de 10 m de altura (g = 10 m/s², sem resistência do ar). Sua energia potencial inicial é de',
           alt: ['50 J', '5 J', '500 J', '20 J', '100 J'],
           c: 0, dif: 'dificil',
-          exp: 'Ep = m·g·h = 0,5 × 10 × 10 = 50 J, que se converte em energia cinética na queda.'
+          exp: 'Ep = m·g·h = 0,5 × 10 × 10 = 50 J, que se converte em energia cinética na queda.',
+          res: '- Dados: m = 0,5 kg; g = 10 m/s²; h = 10 m.\n- Fórmula: Ep = m · g · h.\n- Ep = 0,5 × 10 × 10 = **50 J**.'
         }
       ],
       pares: [
@@ -170,49 +178,57 @@
           q: 'O cinto de segurança protege os ocupantes em uma freada brusca por causa da',
           alt: ['inércia, pois o corpo tende a continuar em movimento', 'ação e reação entre o banco e o motorista', 'força peso', 'conservação da energia térmica', 'lei da gravitação'],
           c: 0, dif: 'facil',
-          exp: 'Sem força resultante, o corpo mantém sua velocidade; o cinto aplica a força que o freia.'
+          exp: 'Sem força resultante, o corpo mantém sua velocidade; o cinto aplica a força que o freia.',
+          res: '- Na freada, o carro para, mas o corpo tende a **continuar em movimento** (1ª lei de Newton: inércia).\n- O cinto aplica uma força que freia o corpo junto com o carro.\n- Sem ele, o ocupante seria projetado para a frente.'
         },
         {
           q: 'Um corpo de 2 kg sofre uma força resultante de 10 N. Sua aceleração é de',
           alt: ['5 m/s²', '20 m/s²', '0,2 m/s²', '12 m/s²', '8 m/s²'],
           c: 0, dif: 'facil',
-          exp: 'a = F/m = 10/2 = 5 m/s².'
+          exp: 'a = F/m = 10/2 = 5 m/s².',
+          res: '- 2ª lei de Newton: F = m · a, logo a = F ÷ m.\n- a = 10 ÷ 2 = **5 m/s²**.'
         },
         {
           q: 'Um carro a 72 km/h mantém velocidade constante por 10 s. A distância percorrida é de',
           alt: ['200 m', '720 m', '72 m', '20 m', '2.000 m'],
           c: 0, dif: 'medio',
-          exp: '72 km/h = 20 m/s; 20 × 10 = 200 m.'
+          exp: '72 km/h = 20 m/s; 20 × 10 = 200 m.',
+          res: '- Converta: 72 km/h ÷ 3,6 = 20 m/s.\n- Movimento uniforme: d = v · t.\n- d = 20 × 10 = **200 m**.'
         },
         {
           q: 'O airbag reduz o risco de lesões porque',
           alt: ['aumenta o tempo de parada do corpo, diminuindo a força média', 'impede qualquer mudança na velocidade do corpo', 'elimina a inércia do ocupante do veículo', 'aumenta a velocidade do corpo no impacto', 'reduz a massa efetiva do ocupante'],
           c: 0, dif: 'medio',
-          exp: 'Com o mesmo impulso, um tempo maior significa menor força.'
+          exp: 'Com o mesmo impulso, um tempo maior significa menor força.',
+          res: '- O impulso (força × tempo) necessário para parar o ocupante é sempre o mesmo.\n- O airbag **aumenta o tempo** da parada.\n- Como F · Δt = constante, mais tempo significa **menor força média** sobre o corpo.'
         },
         {
           q: 'As forças de ação e reação não se anulam porque',
           alt: ['atuam em corpos diferentes', 'têm módulos diferentes', 'têm a mesma direção e o mesmo sentido', 'só existem em repouso', 'ocorrem em instantes distintos'],
           c: 0, dif: 'medio',
-          exp: 'Para anular, as forças precisariam atuar no mesmo corpo.'
+          exp: 'Para anular, as forças precisariam atuar no mesmo corpo.',
+          res: '- Para duas forças se anularem, precisam atuar **no mesmo corpo**.\n- Ação e reação (3ª lei de Newton) atuam em **corpos diferentes**: o chão empurra você e você empurra o chão.\n- Por isso não se cancelam.'
         },
         {
           q: 'Um astronauta na Lua tem, em relação à Terra,',
           alt: ['a mesma massa e peso menor', 'a mesma massa e o mesmo peso', 'massa menor e o mesmo peso', 'massa maior e peso menor', 'massa e peso maiores'],
           c: 0, dif: 'medio',
-          exp: 'A massa é invariante; o peso depende de g, que é menor na Lua.'
+          exp: 'A massa é invariante; o peso depende de g, que é menor na Lua.',
+          res: '- **Massa** é a quantidade de matéria: não muda de lugar para lugar.\n- **Peso** = massa × gravidade (P = m · g). Na Lua, g é menor (cerca de 1/6 da terrestre).\n- Resultado: mesma massa, peso menor.'
         },
         {
           q: 'Em um gráfico velocidade × tempo, uma reta horizontal indica',
           alt: ['movimento uniforme, com aceleração nula', 'repouso absoluto', 'aceleração constante e positiva', 'aceleração crescente', 'movimento em sentido contrário'],
           c: 0, dif: 'dificil',
-          exp: 'Velocidade constante significa aceleração zero.'
+          exp: 'Velocidade constante significa aceleração zero.',
+          res: '- A reta horizontal mostra que a velocidade **não muda** com o tempo.\n- Aceleração é a variação da velocidade: a = 0.\n- É um **movimento uniforme** (velocidade constante).'
         },
         {
           q: 'No vácuo, uma pena e uma pedra soltas da mesma altura',
           alt: ['chegam ao solo ao mesmo tempo', 'a pedra chega bem antes', 'a pena chega antes', 'ficam suspensas', 'não caem'],
           c: 0, dif: 'dificil',
-          exp: 'Sem resistência do ar, a aceleração é igual para todos os corpos.'
+          exp: 'Sem resistência do ar, a aceleração é igual para todos os corpos.',
+          res: '- Sem ar, não há resistência do ar.\n- A aceleração da queda livre (g) é a mesma para qualquer massa.\n- Soltas da mesma altura, **chegam juntas**.'
         }
       ],
       pares: [
@@ -278,49 +294,57 @@
           q: 'Em uma residência, os aparelhos são ligados em paralelo para que',
           alt: ['cada um receba a mesma tensão e funcione de forma independente', 'a corrente seja igual em todos os aparelhos', 'a tensão se divida entre eles', 'todos desliguem se um falhar', 'a resistência total aumente'],
           c: 0, dif: 'facil',
-          exp: 'No paralelo, a tensão é a mesma e cada ramo pode ser ligado ou desligado sozinho.'
+          exp: 'No paralelo, a tensão é a mesma e cada ramo pode ser ligado ou desligado sozinho.',
+          res: '- No **paralelo**, cada aparelho está ligado diretamente aos fios da rede.\n- Todos recebem a **mesma tensão** (110 V ou 220 V).\n- Cada ramo funciona separadamente: desligar um não afeta os outros.'
         },
         {
           q: 'Um resistor de 4 Ω é submetido a 12 V. A corrente que o atravessa é de',
           alt: ['3 A', '48 A', '8 A', '0,33 A', '16 A'],
           c: 0, dif: 'facil',
-          exp: 'i = U/R = 12/4 = 3 A.'
+          exp: 'i = U/R = 12/4 = 3 A.',
+          res: '- Lei de Ohm: U = R · i, logo i = U ÷ R.\n- i = 12 ÷ 4 = **3 A**.'
         },
         {
           q: 'Um aparelho de 1.100 W em 110 V consome corrente de',
           alt: ['10 A', '1 A', '100 A', '1.210 A', '0,1 A'],
           c: 0, dif: 'medio',
-          exp: 'i = P/U = 1.100/110 = 10 A.'
+          exp: 'i = P/U = 1.100/110 = 10 A.',
+          res: '- Potência elétrica: P = U · i, logo i = P ÷ U.\n- i = 1.100 ÷ 110 = **10 A**.'
         },
         {
           q: 'Um chuveiro elétrico aquece a água porque',
           alt: ['a resistência converte energia elétrica em calor (efeito Joule)', 'o fio terra produz calor ao conduzir corrente', 'a tensão se transforma em corrente elétrica', 'o fusível aquece a água ao se fundir', 'a própria água gera eletricidade ao passar'],
           c: 0, dif: 'medio',
-          exp: 'O efeito Joule dissipa a energia na resistência.'
+          exp: 'O efeito Joule dissipa a energia na resistência.',
+          res: '- A corrente passa pela resistência do chuveiro.\n- O **efeito Joule** transforma energia elétrica em calor.\n- O calor é transferido para a água que passa.'
         },
         {
           q: 'Para o chuveiro esquentar mais (posição inverno), o mecanismo é',
           alt: ['diminuir a resistência, o que aumenta a corrente e a potência', 'aumentar a resistência, reduzindo a potência', 'trocar a tensão da rede', 'ligar o fio terra', 'reduzir a vazão a zero'],
           c: 0, dif: 'dificil',
-          exp: 'Com U constante, P = U²/R: menor R, maior potência.'
+          exp: 'Com U constante, P = U²/R: menor R, maior potência.',
+          res: '- Com tensão constante (U), a potência é P = U² ÷ R.\n- Para **aumentar** P, é preciso **diminuir** R.\n- Menor resistência → maior corrente → mais calor.'
         },
         {
           q: 'Cinco lâmpadas de 20 W ficam acesas 4 horas por dia durante 30 dias. O consumo mensal é de',
           alt: ['12 kWh', '120 kWh', '2,4 kWh', '600 kWh', '1,2 kWh'],
           c: 0, dif: 'medio',
-          exp: '5 × 20 = 100 W = 0,1 kW; 0,1 × 4 × 30 = 12 kWh.'
+          exp: '5 × 20 = 100 W = 0,1 kW; 0,1 × 4 × 30 = 12 kWh.',
+          res: '- Potência total: 5 × 20 = 100 W = 0,1 kW.\n- Tempo total: 4 h/dia × 30 dias = 120 h.\n- E = 0,1 × 120 = **12 kWh**.'
         },
         {
           q: 'O disjuntor, ao desarmar, protege a instalação porque',
           alt: ['interrompe a passagem de corrente excessiva', 'aumenta a tensão do circuito', 'reduz a resistência dos fios', 'produz energia extra', 'liga o fio terra'],
           c: 0, dif: 'medio',
-          exp: 'Sobrecargas e curto-circuitos elevam a corrente e podem causar incêndios.'
+          exp: 'Sobrecargas e curto-circuitos elevam a corrente e podem causar incêndios.',
+          res: '- Sobrecarga ou curto-circuito fazem a **corrente** subir muito.\n- Corrente alta aquece os fios e pode causar incêndio.\n- O disjuntor **interrompe o circuito** quando a corrente passa do limite.'
         },
         {
           q: 'Em um circuito em série com duas lâmpadas, se uma delas queimar,',
           alt: ['a outra também apaga, pois o circuito é interrompido', 'a outra fica mais brilhante que antes', 'a outra continua funcionando normalmente', 'a tensão dobra sobre a lâmpada restante', 'a corrente aumenta no circuito inteiro'],
           c: 0, dif: 'dificil',
-          exp: 'No circuito em série existe um único caminho para a corrente.'
+          exp: 'No circuito em série existe um único caminho para a corrente.',
+          res: '- Em **série**, só há um caminho para a corrente.\n- Se uma lâmpada queima, o caminho se rompe.\n- Sem corrente, a outra também **apaga**.'
         }
       ],
       pares: [
@@ -386,49 +410,57 @@
           q: 'A diferença entre uma onda sonora e uma onda luminosa é que o som',
           alt: ['precisa de meio material para se propagar', 'se propaga apenas no vácuo', 'é uma onda eletromagnética', 'tem velocidade maior que a luz', 'é sempre transversal'],
           c: 0, dif: 'facil',
-          exp: 'A luz é eletromagnética e se propaga no vácuo; o som é mecânico.'
+          exp: 'A luz é eletromagnética e se propaga no vácuo; o som é mecânico.',
+          res: '- O som é uma onda **mecânica**: precisa de meio material (ar, água, sólidos).\n- A luz é uma onda **eletromagnética**: propaga-se também no vácuo.\n- Por isso não ouvimos som no espaço, mas vemos a luz das estrelas.'
         },
         {
           q: 'Uma onda tem frequência de 10 Hz e comprimento de onda de 2 m. Sua velocidade é de',
           alt: ['20 m/s', '5 m/s', '12 m/s', '0,2 m/s', '8 m/s'],
           c: 0, dif: 'facil',
-          exp: 'v = λ·f = 2 × 10 = 20 m/s.'
+          exp: 'v = λ·f = 2 × 10 = 20 m/s.',
+          res: '- Equação fundamental: v = λ · f.\n- v = 2 m × 10 Hz.\n- v = **20 m/s**.'
         },
         {
           q: 'O que diferencia um som agudo de um grave é a',
           alt: ['frequência', 'amplitude', 'velocidade no ar', 'distância da fonte', 'cor da fonte sonora'],
           c: 0, dif: 'facil',
-          exp: 'Sons agudos têm frequência alta; graves, baixa.'
+          exp: 'Sons agudos têm frequência alta; graves, baixa.',
+          res: '- Agudo e grave dizem respeito à **altura** do som.\n- Altura depende da **frequência**: alta = agudo; baixa = grave.\n- Amplitude está ligada ao volume (intensidade), não à altura.'
         },
         {
           q: 'O espelho convexo é usado em retrovisores porque ele',
           alt: ['amplia o campo de visão, formando imagens menores', 'forma imagens maiores que o objeto', 'concentra todos os raios em um ponto', 'impede qualquer reflexão', 'produz imagens reais invertidas'],
           c: 0, dif: 'medio',
-          exp: 'Espelhos convexos divergem os raios e cobrem uma área maior.'
+          exp: 'Espelhos convexos divergem os raios e cobrem uma área maior.',
+          res: '- O espelho convexo faz os raios **divergirem** depois de refletir.\n- Assim, ele mostra uma área maior (campo de visão ampliado).\n- Em troca, as imagens ficam **menores** e parecem mais distantes.'
         },
         {
           q: 'Uma pessoa míope precisa usar lentes',
           alt: ['divergentes', 'convergentes', 'planas', 'coloridas', 'sem curvatura'],
           c: 0, dif: 'medio',
-          exp: 'A lente divergente afasta o ponto de convergência para a retina.'
+          exp: 'A lente divergente afasta o ponto de convergência para a retina.',
+          res: '- Na miopia, a imagem se forma **antes** da retina.\n- É preciso afastar o ponto de convergência.\n- Lentes **divergentes** fazem isso.'
         },
         {
           q: 'Quando uma ambulância se aproxima, o som parece mais agudo, fenômeno conhecido como',
           alt: ['efeito Doppler', 'eco', 'reverberação', 'difração', 'interferência destrutiva'],
           c: 0, dif: 'medio',
-          exp: 'A aproximação da fonte aumenta a frequência percebida.'
+          exp: 'A aproximação da fonte aumenta a frequência percebida.',
+          res: '- Ao se aproximar, as frentes de onda chegam mais seguidas ao ouvinte.\n- Isso aumenta a **frequência percebida** (som mais agudo).\n- Esse é o **efeito Doppler**.'
         },
         {
           q: 'A comunicação por fibras ópticas baseia-se no fenômeno de',
           alt: ['reflexão total da luz', 'absorção da luz', 'difração do som', 'efeito Joule', 'indução eletromagnética'],
           c: 0, dif: 'dificil',
-          exp: 'A luz sofre sucessivas reflexões totais no interior da fibra.'
+          exp: 'A luz sofre sucessivas reflexões totais no interior da fibra.',
+          res: '- A luz entra na fibra com um ângulo que provoca **reflexão total** na parede interna.\n- Ela vai "quicando" ao longo da fibra, sem sair.\n- A informação viaja assim por longas distâncias.'
         },
         {
           q: 'Entre as radiações a seguir, a de maior energia é',
           alt: ['raios gama', 'ondas de rádio', 'micro-ondas', 'luz visível', 'infravermelho'],
           c: 0, dif: 'dificil',
-          exp: 'No espectro, a energia cresce das ondas de rádio aos raios gama.'
+          exp: 'No espectro, a energia cresce das ondas de rádio aos raios gama.',
+          res: '- No espectro eletromagnético, a energia cresce com a frequência.\n- Ordem crescente: rádio < micro-ondas < infravermelho < visível < ... < raios X < **gama**.\n- Logo, os raios gama têm maior energia.'
         }
       ],
       pares: [
@@ -494,49 +526,57 @@
           q: 'A brisa marítima durante o dia ocorre porque a terra, em relação ao mar,',
           alt: ['aquece mais rápido, e o ar quente sobe, atraindo ar do mar', 'esfria mais rápido, e o ar do mar sobe', 'tem maior calor específico que a água', 'não troca calor com o ar', 'tem sempre a mesma temperatura que o mar'],
           c: 0, dif: 'medio',
-          exp: 'O menor calor específico da terra faz o ar sobre ela subir (convecção).'
+          exp: 'O menor calor específico da terra faz o ar sobre ela subir (convecção).',
+          res: '- A terra tem **menor calor específico** que a água: esquenta mais rápido.\n- O ar quente sobre a terra sobe (menos denso).\n- O ar mais frio do mar vem ocupar o espaço: é a **brisa marítima** (convecção).'
         },
         {
           q: 'A garrafa térmica reduz as trocas de calor porque',
           alt: ['possui vácuo e superfícies espelhadas entre as paredes', 'é feita apenas de metal condutor', 'não possui tampa', 'aumenta a convecção interna', 'usa paredes totalmente transparentes'],
           c: 0, dif: 'medio',
-          exp: 'O vácuo evita condução e convecção; o espelhamento reduz a irradiação.'
+          exp: 'O vácuo evita condução e convecção; o espelhamento reduz a irradiação.',
+          res: '- Para reduzir as trocas, é preciso bloquear os 3 tipos de propagação.\n- O **vácuo** entre as paredes evita condução e convecção.\n- As paredes **espelhadas** refletem a radiação (irradiação).'
         },
         {
           q: 'Durante a fusão do gelo a 0 °C, a temperatura',
           alt: ['permanece constante enquanto houver gelo', 'aumenta continuamente', 'diminui', 'oscila sem regra', 'dobra'],
           c: 0, dif: 'medio',
-          exp: 'O calor recebido é usado na mudança de estado, e não no aumento da temperatura.'
+          exp: 'O calor recebido é usado na mudança de estado, e não no aumento da temperatura.',
+          res: '- Durante a mudança de estado, o calor recebido rompe ligações entre as moléculas.\n- Esse calor é **calor latente**: não eleva a temperatura.\n- Enquanto houver gelo, a temperatura fica em **0 °C**.'
         },
         {
           q: 'Para aquecer 100 g de água em 10 °C (c = 1 cal/g·°C), são necessárias',
           alt: ['1.000 cal', '100 cal', '10 cal', '110 cal', '10.000 cal'],
           c: 0, dif: 'facil',
-          exp: 'Q = 100 × 1 × 10 = 1.000 cal.'
+          exp: 'Q = 100 × 1 × 10 = 1.000 cal.',
+          res: '- Calor sensível: Q = m · c · ΔT.\n- Q = 100 g × 1 cal/g·°C × 10 °C.\n- Q = **1.000 cal**.'
         },
         {
           q: 'A principal forma de transmissão do calor do Sol até a Terra é a',
           alt: ['irradiação', 'condução', 'convecção', 'dilatação', 'evaporação'],
           c: 0, dif: 'facil',
-          exp: 'Entre o Sol e a Terra há vácuo; só a radiação eletromagnética se propaga.'
+          exp: 'Entre o Sol e a Terra há vácuo; só a radiação eletromagnética se propaga.',
+          res: '- Entre o Sol e a Terra há **vácuo**.\n- Condução e convecção precisam de matéria.\n- Só a **irradiação** (ondas eletromagnéticas) atravessa o vácuo.'
         },
         {
           q: 'A geladeira mantém o interior frio porque',
           alt: ['retira calor do interior e o libera fora, usando trabalho externo', 'produz frio a partir do nada, sem gasto', 'cria energia térmica negativa no interior', 'viola a segunda lei da termodinâmica', 'impede a entrada de qualquer calor externo'],
           c: 0, dif: 'dificil',
-          exp: 'O calor só passa do frio para o quente com realização de trabalho.'
+          exp: 'O calor só passa do frio para o quente com realização de trabalho.',
+          res: '- O calor passa **espontaneamente** do quente para o frio, nunca o contrário.\n- A geladeira faz o inverso, e por isso precisa de **trabalho** (o compressor).\n- Ela retira calor de dentro e o joga para fora (a grade atrás esquenta).'
         },
         {
           q: 'Por que as pontes e os trilhos possuem juntas de dilatação?',
           alt: ['para permitir o aumento de comprimento com a temperatura', 'para reduzir a massa total de toda a estrutura', 'para evitar a corrosão causada pela chuva ácida', 'para aumentar o atrito entre as peças metálicas', 'para conduzir melhor a eletricidade nos trilhos'],
           c: 0, dif: 'medio',
-          exp: 'Sem folgas, a dilatação causaria tensões e deformações.'
+          exp: 'Sem folgas, a dilatação causaria tensões e deformações.',
+          res: '- Os materiais **dilatam** (aumentam de tamanho) com o calor.\n- Sem folga, a dilatação geraria tensões e deformações.\n- As juntas dão espaço para o aumento de comprimento.'
         },
         {
           q: 'Segundo a segunda lei da termodinâmica, uma máquina térmica',
           alt: ['nunca converte todo o calor recebido em trabalho', 'pode ter rendimento de 100%', 'funciona sem fonte fria', 'cria energia continuamente', 'transfere calor do frio para o quente espontaneamente'],
           c: 0, dif: 'dificil',
-          exp: 'Parte do calor é sempre rejeitada para a fonte fria.'
+          exp: 'Parte do calor é sempre rejeitada para a fonte fria.',
+          res: '- Uma máquina térmica recebe calor da fonte quente, realiza trabalho e **rejeita** parte para a fonte fria.\n- Sempre sobra calor para a fonte fria.\n- Logo o rendimento é **menor que 100%**.'
         }
       ],
       pares: [
@@ -602,49 +642,57 @@
           q: 'A geração de energia elétrica em usinas baseia-se em',
           alt: ['variação do fluxo magnético em bobinas (indução)', 'reações químicas entre metais', 'atrito entre fios condutores', 'conversão direta do som em corrente', 'resfriamento de materiais isolantes'],
           c: 0, dif: 'medio',
-          exp: 'O movimento relativo entre ímã e bobina induz corrente elétrica.'
+          exp: 'O movimento relativo entre ímã e bobina induz corrente elétrica.',
+          res: '- Faraday: variar o **fluxo magnético** em uma bobina induz tensão.\n- A turbina gira ímãs (ou bobinas) no gerador.\n- Esse movimento relativo produz a corrente elétrica.'
         },
         {
           q: 'A transmissão de energia em alta tensão é preferida porque',
           alt: ['reduz a corrente e, assim, as perdas por efeito Joule', 'aumenta a corrente e a potência perdida', 'dispensa o uso de fios condutores', 'elimina a necessidade de transformadores', 'aumenta o aquecimento dos cabos'],
           c: 0, dif: 'medio',
-          exp: 'Para a mesma potência, maior tensão significa menor corrente e menor perda.'
+          exp: 'Para a mesma potência, maior tensão significa menor corrente e menor perda.',
+          res: '- A potência é P = U · i.\n- Para a mesma potência, **aumentar U diminui i**.\n- Perdas por efeito Joule dependem de i² · R; com i menor, a perda cai bastante.'
         },
         {
           q: 'Uma amostra radioativa de 40 g com meia-vida de 2 anos terá, após 6 anos,',
           alt: ['5 g', '20 g', '10 g', '2,5 g', '0 g'],
           c: 0, dif: 'medio',
-          exp: '6 anos = 3 meias-vidas: 40 → 20 → 10 → 5 g.'
+          exp: '6 anos = 3 meias-vidas: 40 → 20 → 10 → 5 g.',
+          res: '- Número de meias-vidas: 6 anos ÷ 2 anos = 3.\n- A cada meia-vida, a massa cai pela **metade**.\n- 40 → 20 → 10 → **5 g**.'
         },
         {
           q: 'Os painéis solares fotovoltaicos baseiam-se no',
           alt: ['efeito fotoelétrico', 'efeito Doppler', 'efeito Joule', 'princípio de Arquimedes', 'princípio da inércia'],
           c: 0, dif: 'facil',
-          exp: 'A luz libera elétrons em semicondutores, gerando corrente.'
+          exp: 'A luz libera elétrons em semicondutores, gerando corrente.',
+          res: '- A luz do Sol atinge o semicondutor (silício).\n- Os fótons **liberam elétrons**, gerando corrente elétrica.\n- Esse é o **efeito fotoelétrico**.'
         },
         {
           q: 'Se um ímã de barra for partido ao meio, obtêm-se',
           alt: ['dois ímãs completos, cada um com polo norte e polo sul', 'um polo norte isolado e um polo sul isolado', 'dois pedaços sem magnetismo', 'um ímã com dois polos norte', 'um ímã apenas'],
           c: 0, dif: 'medio',
-          exp: 'Os polos magnéticos são inseparáveis.'
+          exp: 'Os polos magnéticos são inseparáveis.',
+          res: '- Os polos magnéticos **não existem isolados** (não há monopolo).\n- Ao partir o ímã, surgem novos polos nas extremidades de cada pedaço.\n- Resultado: dois ímãs, cada um com norte e sul.'
         },
         {
           q: 'O transformador só funciona com corrente alternada porque',
           alt: ['precisa de um fluxo magnético variável para induzir tensão', 'a corrente contínua é fraca demais para uso', 'a corrente alternada não possui polos', 'a tensão alternada é sempre menor que a contínua', 'a corrente contínua não existe nas instalações'],
           c: 0, dif: 'dificil',
-          exp: 'Sem variação do fluxo, não há indução.'
+          exp: 'Sem variação do fluxo, não há indução.',
+          res: '- O transformador funciona por **indução**, que exige variação do fluxo magnético.\n- A corrente alternada muda o tempo todo, então o fluxo varia.\n- Na corrente contínua o fluxo é constante e não induz tensão no secundário.'
         },
         {
           q: 'A radiação emitida pelo telefone celular é classificada como não ionizante, ou seja,',
           alt: ['não tem energia suficiente para arrancar elétrons dos átomos', 'é idêntica aos raios gama em todos os aspectos', 'é mais energética que os raios X', 'sempre destrói o DNA das células', 'é produzida por núcleos atômicos instáveis'],
           c: 0, dif: 'dificil',
-          exp: 'Micro-ondas e rádio têm baixa energia por fóton.'
+          exp: 'Micro-ondas e rádio têm baixa energia por fóton.',
+          res: '- **Ionizante** = com energia para arrancar elétrons dos átomos (raios X, gama).\n- Micro-ondas e ondas de rádio têm **baixa energia por fóton**.\n- Por isso são não ionizantes.'
         },
         {
           q: 'O acidente com o césio-137 em Goiânia (1987) ilustra o risco de',
           alt: ['manuseio inadequado de fontes radioativas', 'excesso de energia solar', 'poluição sonora', 'falta de saneamento básico', 'doenças transmitidas por mosquitos'],
           c: 0, dif: 'dificil',
-          exp: 'Uma cápsula de césio foi aberta sem conhecimento do perigo, contaminando pessoas e o ambiente.'
+          exp: 'Uma cápsula de césio foi aberta sem conhecimento do perigo, contaminando pessoas e o ambiente.',
+          res: '- O acidente de 1987 aconteceu quando uma cápsula de **césio-137** de um aparelho abandonado foi aberta.\n- O material radioativo contaminou pessoas e o ambiente.\n- Ilustra o risco do **manuseio inadequado** de fontes radioativas.'
         }
       ],
       pares: [
@@ -706,49 +754,57 @@
           q: 'Um navio de aço flutua porque',
           alt: ['sua densidade média é menor que a da água', 'o aço é menos denso que a água', 'o peso do navio é nulo', 'o empuxo é sempre menor que o peso', 'a água não exerce força sobre ele'],
           c: 0, dif: 'facil',
-          exp: 'O volume ocupado por ar reduz a densidade média do conjunto.'
+          exp: 'O volume ocupado por ar reduz a densidade média do conjunto.',
+          res: '- Um corpo flutua se sua **densidade média** for menor que a do líquido.\n- O navio tem grande parte do volume ocupado por **ar**.\n- Sua densidade média fica abaixo da da água, então flutua.'
         },
         {
           q: 'Uma faca afiada corta melhor porque, para a mesma força, ela',
           alt: ['tem menor área de contato e maior pressão', 'tem maior área de contato', 'reduz a força aplicada', 'aumenta a massa do alimento', 'diminui a densidade do material'],
           c: 0, dif: 'facil',
-          exp: 'Como p = F/A, menor área significa maior pressão.'
+          exp: 'Como p = F/A, menor área significa maior pressão.',
+          res: '- Pressão: p = F ÷ A.\n- Com a mesma força F, **menor área A** dá **maior pressão**.\n- A lâmina afiada concentra a força em uma área bem pequena.'
         },
         {
           q: 'A pressão em um ponto no fundo de um lago depende da',
           alt: ['profundidade, da densidade do líquido e da gravidade', 'forma do lago, apenas', 'área da superfície do lago, apenas', 'cor da água', 'temperatura do ar, apenas'],
           c: 0, dif: 'medio',
-          exp: 'p = p₀ + d·g·h.'
+          exp: 'p = p₀ + d·g·h.',
+          res: '- Pressão hidrostática: p = p₀ + d · g · h.\n- Depende da **densidade** do líquido (d), da **gravidade** (g) e da **profundidade** (h).\n- Não depende da forma do lago.'
         },
         {
           q: 'A prensa hidráulica baseia-se no princípio de',
           alt: ['Pascal', 'Arquimedes', 'Ohm', 'Faraday', 'Bernoulli apenas'],
           c: 0, dif: 'medio',
-          exp: 'A pressão aplicada em um êmbolo é transmitida ao outro, que multiplica a força.'
+          exp: 'A pressão aplicada em um êmbolo é transmitida ao outro, que multiplica a força.',
+          res: '- Princípio de **Pascal**: a pressão aplicada a um fluido se transmite integralmente.\n- F₁ ÷ A₁ = F₂ ÷ A₂.\n- Com êmbolo maior (A₂), a força obtida é multiplicada.'
         },
         {
           q: 'Se a distância entre dois corpos dobra, a força gravitacional entre eles',
           alt: ['cai a um quarto', 'dobra', 'cai à metade', 'quadruplica', 'permanece igual'],
           c: 0, dif: 'medio',
-          exp: 'A força é inversamente proporcional ao quadrado da distância.'
+          exp: 'A força é inversamente proporcional ao quadrado da distância.',
+          res: '- Lei da gravitação: F = G · m₁ · m₂ ÷ d².\n- Se d → 2d: F\' = F ÷ (2)² = F ÷ 4.\n- A força **cai a um quarto**.'
         },
         {
           q: 'Os astronautas na estação espacial parecem flutuar porque',
           alt: ['estão em queda livre ao redor da Terra, em movimento orbital', 'não há gravidade alguma no espaço sideral', 'sua massa se anula fora da atmosfera', 'a Terra deixa de atrair corpos distantes', 'o ar da estação sustenta seus corpos'],
           c: 0, dif: 'dificil',
-          exp: 'A gravidade ainda atua; o conjunto estação e astronautas cai continuamente.'
+          exp: 'A gravidade ainda atua; o conjunto estação e astronautas cai continuamente.',
+          res: '- A gravidade na órbita ainda é forte (cerca de 90% da de superfície).\n- A estação e os astronautas estão em **queda livre** ao redor da Terra.\n- Sem apoio, o peso aparente é zero: eles "flutuam".'
         },
         {
           q: 'Um objeto de 200 g tem volume de 100 cm³. Sua densidade é de',
           alt: ['2 g/cm³', '0,5 g/cm³', '20 g/cm³', '200 g/cm³', '100 g/cm³'],
           c: 0, dif: 'dificil',
-          exp: 'd = m/V = 200/100 = 2 g/cm³; como é maior que 1, afunda na água.'
+          exp: 'd = m/V = 200/100 = 2 g/cm³; como é maior que 1, afunda na água.',
+          res: '- Densidade: d = m ÷ V.\n- d = 200 g ÷ 100 cm³ = **2 g/cm³**.\n- Como é maior que 1 g/cm³ (água), o objeto afunda.'
         },
         {
           q: 'As marés estão associadas principalmente à',
           alt: ['atração gravitacional da Lua sobre as águas', 'rotação do Sol ao redor da Terra', 'ação dos ventos alísios', 'evaporação dos oceanos', 'pressão atmosférica sobre as montanhas'],
           c: 0, dif: 'medio',
-          exp: 'A Lua, e em menor grau o Sol, deforma a distribuição das águas.'
+          exp: 'A Lua, e em menor grau o Sol, deforma a distribuição das águas.',
+          res: '- As marés são variações do nível do mar.\n- Elas vêm da **atração gravitacional** da Lua (e, em menor grau, do Sol) sobre as águas.\n- Na Lua cheia e na nova, as marés são mais fortes (marés de sizígia).'
         }
       ],
       pares: [

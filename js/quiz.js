@@ -7,6 +7,14 @@
 
   /* Bloco recolhível com o conteúdo do tema da questão (resumo, conceitos, pegadinhas).
      Não muda de página: o aluno revisa e continua o quiz de onde parou. */
+  /* Resolução passo a passo (campo opcional "res" da questão), recolhida por padrão. */
+  function resolucao(p) {
+    if (!p.res) return null;
+    return el('details', { class: 'res-passo' },
+      el('summary', null, '🧮 Ver a resolução passo a passo'),
+      el('div', { class: 'res-passo-body' }, U.texto(p.res)));
+  }
+
   function revisar(p) {
     var t = p.tema, d = p.disc;
     if (!t || !t.conceitos || !t.conceitos.length) return null;
@@ -70,6 +78,7 @@
           el('div', { class: 'fb-head ' + (ok ? 'ok' : 'err') }, ok ? '✅ Correto' : '❌ Não foi dessa vez'),
           ok ? null : el('p', { class: 'fb-ans' }, 'Resposta certa: ', el('strong', null, U.rich(p.alt[p.c]))),
           el('div', { class: 'fb-exp' }, U.rich(p.exp)),
+          resolucao(p),
           ok ? null : revisar(p));
         prox.hidden = false;
         prox.focus({ preventScroll: true });
@@ -169,6 +178,7 @@
               el('div', { class: 'rev-body' },
                 el('p', null, el('strong', null, 'Resposta certa: '), U.rich(f.p.alt[f.p.c])),
                 el('p', null, U.rich(f.p.exp)),
+                resolucao(f.p),
                 el('p', { class: 'hint' }, f.p.disc.emoji + ' ' + f.p.disc.nome + ' · ' + f.p.tema.nome),
                 revisar(f.p)));
           })) : null);

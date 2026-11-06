@@ -90,6 +90,8 @@ ENEM.disciplinas.forEach((d) => {
       if (!Number.isInteger(q.c) || q.c < 0 || q.c > 4) E(`${qloc}: "c" deve ser um número de 0 a 4`);
       if (!q.exp) E(`${qloc}: sem explicação ("exp")`);
       else if (/alternativa\s+[a-e]\b|letra\s+[a-e]\b/i.test(q.exp)) E(`${qloc}: a explicação cita letra de alternativa (elas são embaralhadas)`);
+      if (q.res && /alternativa\s+[a-e]\b|letra\s+[a-e]\b/i.test(q.res)) E(`${qloc}: a resolução cita letra de alternativa (elas são embaralhadas)`);
+      if (/^(matematica|fisica|quimica)$/.test(d.id) && !q.res) W(`${qloc}: sem resolução passo a passo ("res")`);
       if (DIF.indexOf(q.dif) < 0) E(`${qloc}: "dif" deve ser facil | medio | dificil`);
       else dif[q.dif]++;
       if (/\b(todas as anteriores|nenhuma das anteriores)\b/i.test((q.alt || []).join(' ')) && !q.fixa) E(`${qloc}: use "fixa: true" quando houver "todas/nenhuma das anteriores"`);

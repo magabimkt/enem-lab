@@ -69,28 +69,32 @@ ENEM.temas('matematica', [
         q: 'Em um mapa, a escala é 1:200.000. Dois pontos que distam 3 cm no mapa estão, na realidade, a quantos quilômetros um do outro?',
         alt: ['0,6 km', '3 km', '6 km', '60 km', '600 km'],
         c: 2,
-        exp: '3 cm × 200.000 = 600.000 cm. Como 100.000 cm = 1 km, a distância real é de **6 km**.'
+        exp: '3 cm × 200.000 = 600.000 cm. Como 100.000 cm = 1 km, a distância real é de **6 km**.',
+        res: '- **Escala 1:200.000** significa que 1 cm no mapa = 200.000 cm na realidade.\n- Distância real = 3 × 200.000 = 600.000 cm.\n- Converta: 100.000 cm = 1 km, então 600.000 cm = **6 km**.\n- ⚠️ Armadilha: esquecer de converter cm em km.'
       },
       {
         dif: 'facil',
         q: 'Uma loja oferece 15% de desconto em uma camiseta que custa R$ 80,00. Qual é o valor a pagar?',
         alt: ['R$ 12,00', 'R$ 65,00', 'R$ 66,00', 'R$ 68,00', 'R$ 92,00'],
         c: 3,
-        exp: 'Desconto: 15% de 80 = 12. Preço final: 80 − 12 = **R$ 68,00** (ou 80 × 0,85).'
+        exp: 'Desconto: 15% de 80 = 12. Preço final: 80 − 12 = **R$ 68,00** (ou 80 × 0,85).',
+        res: '- **Desconto**: 15% de 80 = 0,15 × 80 = 12.\n- **Preço final**: 80 − 12 = **R$ 68,00**.\n- Atalho: pagar 85% do preço → 80 × 0,85 = 68.'
       },
       {
         dif: 'facil',
         q: 'Uma receita para 4 pessoas usa 300 g de farinha. Mantendo a proporção, quantos gramas são necessários para 10 pessoas?',
         alt: ['600 g', '650 g', '700 g', '750 g', '1.200 g'],
         c: 3,
-        exp: 'Grandezas diretamente proporcionais: 300 ÷ 4 = 75 g por pessoa; 75 × 10 = **750 g**.'
+        exp: 'Grandezas diretamente proporcionais: 300 ÷ 4 = 75 g por pessoa; 75 × 10 = **750 g**.',
+        res: '- Mais pessoas, mais farinha: **grandezas diretamente proporcionais**.\n- Regra de três: 4 pessoas → 300 g; 10 pessoas → x.\n- x = (300 × 10) ÷ 4 = 3.000 ÷ 4 = **750 g**.'
       },
       {
         dif: 'medio',
         q: 'Três pedreiros constroem um muro em 12 dias. Mantendo o mesmo ritmo de trabalho, em quantos dias 4 pedreiros construiriam o mesmo muro?',
         alt: ['8 dias', '9 dias', '10 dias', '16 dias', '48 dias'],
         c: 1,
-        exp: 'Mais pedreiros, menos dias: grandezas inversamente proporcionais. O produto é constante: 3 × 12 = 36 → 36 ÷ 4 = **9 dias**. Quem respondeu 16 tratou como regra de três direta.'
+        exp: 'Mais pedreiros, menos dias: grandezas inversamente proporcionais. O produto é constante: 3 × 12 = 36 → 36 ÷ 4 = **9 dias**. Quem respondeu 16 tratou como regra de três direta.',
+        res: '- Mais pedreiros, **menos** dias: grandezas **inversamente** proporcionais.\n- O produto é constante: 3 × 12 = 36 "pedreiro-dias".\n- Com 4 pedreiros: 36 ÷ 4 = **9 dias**.\n- ⚠️ Armadilha: tratar como regra de três direta dá 16 dias.'
       },
       {
         dif: 'medio',
@@ -103,7 +107,8 @@ ENEM.temas('matematica', [
           '20% maior que o original.'
         ],
         c: 1,
-        exp: 'Fatores: 1,2 × 0,8 = 0,96. O preço final é 96% do original, ou seja, **4% menor**. A segunda variação incide sobre uma base maior.'
+        exp: 'Fatores: 1,2 × 0,8 = 0,96. O preço final é 96% do original, ou seja, **4% menor**. A segunda variação incide sobre uma base maior.',
+        res: '- Aumento de 20% → fator 1,2. Redução de 20% → fator 0,8.\n- Fator total: 1,2 × 0,8 = 0,96.\n- O preço final é 96% do original: **4% menor**.\n- ⚠️ A segunda variação incide sobre um valor já maior, por isso não se anulam.'
       },
       {
         dif: 'medio',
@@ -116,21 +121,24 @@ ENEM.temas('matematica', [
           '50% de crescimento relativo.'
         ],
         c: 0,
-        exp: 'Pontos percentuais são a diferença simples: 50 − 40 = 10. O crescimento relativo é 10 ÷ 40 = **25%**.'
+        exp: 'Pontos percentuais são a diferença simples: 50 − 40 = 10. O crescimento relativo é 10 ÷ 40 = **25%**.',
+        res: '- **Pontos percentuais** = diferença simples: 50 − 40 = **10 p.p.**\n- **Crescimento relativo** = aumento ÷ valor inicial = 10 ÷ 40 = 0,25 = **25%**.'
       },
       {
         dif: 'dificil',
         q: 'Uma torneira enche um tanque em 6 horas e outra enche o mesmo tanque em 3 horas. Funcionando juntas, em quanto tempo as duas enchem o tanque?',
         alt: ['1 hora', '1 hora e 30 minutos', '2 horas', '4 horas e 30 minutos', '9 horas'],
         c: 2,
-        exp: 'Em 1 hora, a primeira enche 1/6 do tanque e a segunda 1/3. Juntas: 1/6 + 2/6 = 3/6 = 1/2 do tanque por hora. Logo, levam **2 horas**. Calcular a média (4h30) é um erro comum.'
+        exp: 'Em 1 hora, a primeira enche 1/6 do tanque e a segunda 1/3. Juntas: 1/6 + 2/6 = 3/6 = 1/2 do tanque por hora. Logo, levam **2 horas**. Calcular a média (4h30) é um erro comum.',
+        res: '- Em 1 hora, a primeira enche 1/6 do tanque e a segunda 1/3 (= 2/6).\n- Juntas: 1/6 + 2/6 = 3/6 = 1/2 tanque por hora.\n- Se enchem metade por hora, o tanque todo leva **2 horas**.\n- ⚠️ A média (4 h 30) é um erro comum.'
       },
       {
         dif: 'dificil',
         q: 'Um comerciante comprou uma mercadoria por R$ 60,00 e quer vendê-la obtendo um lucro de 25% **sobre o preço de venda**. Qual deve ser o preço de venda?',
         alt: ['R$ 75,00', 'R$ 80,00', 'R$ 85,00', 'R$ 90,00', 'R$ 100,00'],
         c: 1,
-        exp: 'Se o lucro é 25% do preço de venda (P), o custo corresponde a 75% de P: 0,75 · P = 60 → P = **R$ 80,00**. Calcular 25% sobre o custo daria R$ 75,00, que é a armadilha.'
+        exp: 'Se o lucro é 25% do preço de venda (P), o custo corresponde a 75% de P: 0,75 · P = 60 → P = **R$ 80,00**. Calcular 25% sobre o custo daria R$ 75,00, que é a armadilha.',
+        res: '- Seja P o preço de venda. Lucro = 25% de P, então o custo é os 75% restantes.\n- 0,75 · P = 60.\n- P = 60 ÷ 0,75 = **R$ 80,00**.\n- ⚠️ Se o lucro fosse 25% sobre o custo, seria 60 × 1,25 = 75.'
       }
     ],
     pares: [
@@ -195,49 +203,57 @@ ENEM.temas('matematica', [
         q: 'Uma corrida de táxi cobra R$ 5,00 fixos mais R$ 2,00 por quilômetro. O valor de uma corrida de 12 km é de',
         alt: ['R$ 29,00', 'R$ 24,00', 'R$ 34,00', 'R$ 19,00', 'R$ 41,00'],
         c: 0, dif: 'facil',
-        exp: 'P(x) = 5 + 2x; P(12) = 5 + 24 = 29.'
+        exp: 'P(x) = 5 + 2x; P(12) = 5 + 24 = 29.',
+        res: '- Modele: **valor fixo + taxa × quantidade** → P(x) = 5 + 2x.\n- Substitua x = 12: P(12) = 5 + 2 · 12.\n- P(12) = 5 + 24 = **R$ 29,00**.'
       },
       {
         q: 'Em f(x) = 3x − 7, o valor de f(4) é',
         alt: ['5', '12', '−7', '19', '−5'],
         c: 0, dif: 'facil',
-        exp: 'f(4) = 3·4 − 7 = 5.'
+        exp: 'f(4) = 3·4 − 7 = 5.',
+        res: '- Substitua x por 4: f(4) = 3 · 4 − 7.\n- f(4) = 12 − 7 = **5**.'
       },
       {
         q: 'As raízes de x² − 5x + 6 = 0 são',
         alt: ['2 e 3', '1 e 6', '−2 e −3', '5 e 6', '−1 e 6'],
         c: 0, dif: 'medio',
-        exp: 'Soma 5 e produto 6 correspondem a 2 e 3.'
+        exp: 'Soma 5 e produto 6 correspondem a 2 e 3.',
+        res: '- Identifique a = 1, b = −5, c = 6.\n- Procure dois números com **soma = 5** (−b/a) e **produto = 6** (c/a): 2 e 3.\n- Confira: 2 + 3 = 5 e 2 · 3 = 6. Raízes: **2 e 3**.\n- Outra via: Δ = 25 − 24 = 1; x = (5 ± 1)/2 → 3 ou 2.'
       },
       {
         q: 'O gráfico de f(x) = x² − 6x + 5 tem valor mínimo igual a',
         alt: ['−4', '5', '3', '−6', '0'],
         c: 0, dif: 'medio',
-        exp: 'x_v = 6/2 = 3 e f(3) = 9 − 18 + 5 = −4.'
+        exp: 'x_v = 6/2 = 3 e f(3) = 9 − 18 + 5 = −4.',
+        res: '- a = 1 > 0 → parábola com concavidade para cima, então tem **mínimo** no vértice.\n- x do vértice: x_v = −b/(2a) = 6/2 = 3.\n- y do vértice: f(3) = 9 − 18 + 5 = **−4**.'
       },
       {
         q: 'Uma colônia de bactérias dobra a cada hora. Se começa com 100, após 3 horas terá',
         alt: ['800', '300', '600', '1.000', '400'],
         c: 0, dif: 'medio',
-        exp: '100 · 2³ = 800.'
+        exp: '100 · 2³ = 800.',
+        res: '- Dobrar a cada hora é multiplicar por 2 (crescimento **exponencial**).\n- Após 3 horas: 100 · 2³.\n- 100 · 8 = **800**.'
       },
       {
         q: 'O lucro L(x) = −x² + 10x − 16 é máximo quando x vale',
         alt: ['5', '16', '10', '2', '8'],
         c: 0, dif: 'dificil',
-        exp: 'x_v = −10/(2·(−1)) = 5.'
+        exp: 'x_v = −10/(2·(−1)) = 5.',
+        res: '- a = −1 < 0 → parábola para baixo, com **máximo** no vértice.\n- x_v = −b/(2a) = −10/(2 · (−1)) = −10/(−2) = **5**.\n- (O lucro máximo seria L(5) = −25 + 50 − 16 = 9.)'
       },
       {
         q: 'Qual o valor de log₂ 32?',
         alt: ['5', '16', '4', '2', '32'],
         c: 0, dif: 'medio',
-        exp: '2⁵ = 32.'
+        exp: '2⁵ = 32.',
+        res: '- log₂ 32 = x significa 2^x = 32.\n- Potências de 2: 2, 4, 8, 16, **32** → é a 5ª.\n- Logo, x = **5**.'
       },
       {
         q: 'Um plano de celular custa R$ 40,00 fixos mais R$ 0,50 por GB extra. Se a conta foi R$ 52,00, foram usados de GB extra',
         alt: ['24', '12', '104', '4', '26'],
         c: 0, dif: 'dificil',
-        exp: '40 + 0,5x = 52 → 0,5x = 12 → x = 24.'
+        exp: '40 + 0,5x = 52 → 0,5x = 12 → x = 24.',
+        res: '- Modelo: 40 + 0,5 · x = 52, com x = GB extras.\n- 0,5 · x = 52 − 40 = 12.\n- x = 12 ÷ 0,5 = **24 GB**.'
       }
     ],
     pares: [
@@ -303,49 +319,57 @@ ENEM.temas('matematica', [
         q: 'Um retângulo mede 8 m por 5 m. Sua área e seu perímetro são, respectivamente,',
         alt: ['40 m² e 26 m', '13 m² e 40 m', '26 m² e 40 m', '40 m² e 13 m', '80 m² e 26 m'],
         c: 0, dif: 'facil',
-        exp: 'Área 8 · 5 = 40; perímetro 2(8 + 5) = 26.'
+        exp: 'Área 8 · 5 = 40; perímetro 2(8 + 5) = 26.',
+        res: '- **Área** = base × altura = 8 × 5 = **40 m²**.\n- **Perímetro** = soma dos lados = 2 · (8 + 5) = **26 m**.'
       },
       {
         q: 'Os catetos de um triângulo retângulo medem 6 cm e 8 cm. A hipotenusa mede',
         alt: ['10 cm', '14 cm', '12 cm', '48 cm', '7 cm'],
         c: 0, dif: 'facil',
-        exp: '6² + 8² = 100, logo a hipotenusa é 10.'
+        exp: '6² + 8² = 100, logo a hipotenusa é 10.',
+        res: '- Pitágoras: hipotenusa² = cateto² + cateto².\n- h² = 6² + 8² = 36 + 64 = 100.\n- h = √100 = **10 cm**. (É o trio 3-4-5 dobrado.)'
       },
       {
         q: 'Uma sala de 4 m por 5 m será coberta por pisos quadrados de 50 cm de lado. O número de peças é',
         alt: ['80', '20', '40', '160', '100'],
         c: 0, dif: 'medio',
-        exp: 'Área da sala 20 m²; peça 0,25 m²; 20/0,25 = 80.'
+        exp: 'Área da sala 20 m²; peça 0,25 m²; 20/0,25 = 80.',
+        res: '- Área da sala: 4 × 5 = 20 m².\n- Peça: 50 cm = 0,5 m → área = 0,5 × 0,5 = 0,25 m².\n- Número de peças = 20 ÷ 0,25 = **80**.\n- ⚠️ Converta tudo para a mesma unidade antes.'
       },
       {
         q: 'Um círculo de raio 3 cm (π = 3,14) tem área de',
         alt: ['28,26 cm²', '18,84 cm²', '9,42 cm²', '56,52 cm²', '37,68 cm²'],
         c: 0, dif: 'medio',
-        exp: 'A = π·r² = 3,14 · 9 = 28,26.'
+        exp: 'A = π·r² = 3,14 · 9 = 28,26.',
+        res: '- Fórmula: A = π · r².\n- A = 3,14 · 3² = 3,14 · 9.\n- A = **28,26 cm²**.'
       },
       {
         q: 'Ao dobrar a medida do lado de um quadrado, sua área',
         alt: ['fica 4 vezes maior', 'fica 2 vezes maior', 'fica 8 vezes maior', 'permanece igual', 'fica 3 vezes maior'],
         c: 0, dif: 'medio',
-        exp: '(2l)² = 4l².'
+        exp: '(2l)² = 4l².',
+        res: '- Lado l → área l². Lado 2l → área (2l)² = 4l².\n- A área fica **4 vezes maior** (o quadrado do fator).'
       },
       {
         q: 'Uma rampa deve vencer 3 m de altura com inclinação de 30° (sen 30° = 0,5). Seu comprimento é de',
         alt: ['6 m', '1,5 m', '3 m', '9 m', '5 m'],
         c: 0, dif: 'dificil',
-        exp: 'sen 30° = altura/comprimento → comprimento = 3/0,5 = 6.'
+        exp: 'sen 30° = altura/comprimento → comprimento = 3/0,5 = 6.',
+        res: '- Desenhe o triângulo retângulo: a altura (3 m) é o cateto **oposto** ao ângulo de 30°; a rampa é a **hipotenusa**.\n- sen 30° = oposto ÷ hipotenusa → 0,5 = 3 ÷ c.\n- c = 3 ÷ 0,5 = **6 m**.'
       },
       {
         q: 'A soma dos ângulos internos de um hexágono é',
         alt: ['720°', '360°', '540°', '900°', '1.080°'],
         c: 0, dif: 'dificil',
-        exp: '(6 − 2) · 180° = 720°.'
+        exp: '(6 − 2) · 180° = 720°.',
+        res: '- Fórmula: S = (n − 2) · 180°, com n = número de lados.\n- Hexágono: n = 6 → S = 4 · 180°.\n- S = **720°**.'
       },
       {
         q: 'Um triângulo tem base de 10 cm e altura de 6 cm. Sua área é de',
         alt: ['30 cm²', '60 cm²', '16 cm²', '15 cm²', '120 cm²'],
         c: 0, dif: 'facil',
-        exp: 'A = 10 · 6 / 2 = 30.'
+        exp: 'A = 10 · 6 / 2 = 30.',
+        res: '- A = (base × altura) ÷ 2.\n- A = (10 × 6) ÷ 2 = 60 ÷ 2 = **30 cm²**.'
       }
     ],
     pares: [
@@ -411,49 +435,57 @@ ENEM.temas('matematica', [
         q: 'Uma piscina mede 10 m de comprimento, 5 m de largura e 2 m de profundidade. Sua capacidade é de',
         alt: ['100.000 L', '100 L', '10.000 L', '1.000 L', '17.000 L'],
         c: 0, dif: 'facil',
-        exp: '10 · 5 · 2 = 100 m³ = 100.000 L.'
+        exp: '10 · 5 · 2 = 100 m³ = 100.000 L.',
+        res: '- Volume = comprimento × largura × profundidade = 10 · 5 · 2 = **100 m³**.\n- 1 m³ = 1.000 L → 100 m³ = **100.000 L**.'
       },
       {
         q: 'Um cubo de aresta 3 cm tem volume de',
         alt: ['27 cm³', '9 cm³', '18 cm³', '6 cm³', '81 cm³'],
         c: 0, dif: 'facil',
-        exp: '3³ = 27.'
+        exp: '3³ = 27.',
+        res: '- V = a³ = 3 · 3 · 3 = **27 cm³**.'
       },
       {
         q: 'Um cilindro tem raio 2 cm e altura 5 cm (π = 3). O volume é de',
         alt: ['60 cm³', '20 cm³', '30 cm³', '120 cm³', '15 cm³'],
         c: 0, dif: 'medio',
-        exp: 'V = 3 · 4 · 5 = 60.'
+        exp: 'V = 3 · 4 · 5 = 60.',
+        res: '- V = π · r² · h.\n- V = 3 · 2² · 5 = 3 · 4 · 5.\n- V = **60 cm³**.'
       },
       {
         q: 'O volume de um cone é, em relação ao do cilindro de mesma base e altura,',
         alt: ['um terço', 'o dobro', 'a metade', 'igual', 'um quarto'],
         c: 0, dif: 'medio',
-        exp: 'V_cone = (π·r²·h)/3.'
+        exp: 'V_cone = (π·r²·h)/3.',
+        res: '- Cilindro: V = π · r² · h. Cone: V = (π · r² · h) ÷ 3.\n- Com a mesma base e a mesma altura, o cone tem **um terço** do volume do cilindro.'
       },
       {
         q: 'Se as arestas de um cubo dobram, o volume',
         alt: ['fica 8 vezes maior', 'fica 2 vezes maior', 'fica 4 vezes maior', 'não se altera', 'fica 6 vezes maior'],
         c: 0, dif: 'medio',
-        exp: '(2a)³ = 8a³.'
+        exp: '(2a)³ = 8a³.',
+        res: '- Aresta a → V = a³. Aresta 2a → V = (2a)³ = 8a³.\n- O volume fica **8 vezes maior** (o cubo do fator).'
       },
       {
         q: 'Uma esfera de raio 3 cm tem volume de',
         alt: ['36π cm³', '12π cm³', '9π cm³', '108π cm³', '27π cm³'],
         c: 0, dif: 'dificil',
-        exp: '(4/3)·π·27 = 36π.'
+        exp: '(4/3)·π·27 = 36π.',
+        res: '- V = (4/3) · π · r³.\n- r³ = 27 → V = (4/3) · π · 27 = 4 · 9 · π.\n- V = **36π cm³**.'
       },
       {
         q: 'Um reservatório com 3 m³ de água é usado para encher garrafas de 2 litros. O número de garrafas é de',
         alt: ['1.500', '150', '6.000', '15', '600'],
         c: 0, dif: 'dificil',
-        exp: '3 m³ = 3.000 L; 3.000/2 = 1.500.'
+        exp: '3 m³ = 3.000 L; 3.000/2 = 1.500.',
+        res: '- Converta: 3 m³ = 3 × 1.000 = 3.000 L.\n- Número de garrafas = 3.000 ÷ 2 = **1.500**.'
       },
       {
         q: 'Uma caixa em forma de paralelepípedo tem base de 20 cm por 10 cm e altura de 5 cm. Seu volume em litros é de',
         alt: ['1 L', '10 L', '0,1 L', '100 L', '0,01 L'],
         c: 0, dif: 'dificil',
-        exp: '20 · 10 · 5 = 1.000 cm³ = 1 L.'
+        exp: '20 · 10 · 5 = 1.000 cm³ = 1 L.',
+        res: '- V = 20 · 10 · 5 = 1.000 cm³.\n- 1 cm³ = 1 mL → 1.000 cm³ = 1.000 mL.\n- 1.000 mL = **1 L**.'
       }
     ],
     pares: [
@@ -519,49 +551,57 @@ ENEM.temas('matematica', [
         q: 'Uma pessoa tem 3 camisas e 4 calças. O número de combinações diferentes é de',
         alt: ['12', '7', '24', '6', '9'],
         c: 0, dif: 'facil',
-        exp: '3 · 4 = 12.'
+        exp: '3 · 4 = 12.',
+        res: '- **Princípio multiplicativo**: cada camisa combina com cada calça.\n- 3 · 4 = **12** combinações.'
       },
       {
         q: 'Ao lançar um dado comum, a probabilidade de sair um número par é de',
         alt: ['1/2', '1/3', '1/6', '2/3', '5/6'],
         c: 0, dif: 'facil',
-        exp: 'Pares: 2, 4 e 6 → 3/6 = 1/2.'
+        exp: 'Pares: 2, 4 e 6 → 3/6 = 1/2.',
+        res: '- Possíveis: 6 faces (1 a 6). Favoráveis (pares): 2, 4, 6 → 3.\n- P = 3/6 = **1/2**.'
       },
       {
         q: 'Uma urna tem 3 bolas vermelhas e 2 azuis. A probabilidade de sortear uma azul é de',
         alt: ['2/5', '3/5', '1/2', '1/5', '2/3'],
         c: 0, dif: 'facil',
-        exp: '2 favoráveis em 5 possíveis.'
+        exp: '2 favoráveis em 5 possíveis.',
+        res: '- Total de bolas: 3 + 2 = 5. Favoráveis (azuis): 2.\n- P = 2/5.'
       },
       {
         q: 'Quantos pares podem ser formados com 5 pessoas, escolhendo 2 (a ordem não importa)?',
         alt: ['10', '20', '5', '25', '15'],
         c: 0, dif: 'medio',
-        exp: 'C(5,2) = 5!/(2!·3!) = 10.'
+        exp: 'C(5,2) = 5!/(2!·3!) = 10.',
+        res: '- A ordem **não importa** (par A-B = par B-A) → **combinação**.\n- C(5,2) = 5! ÷ (2! · 3!) = (5 · 4) ÷ 2.\n- = 20 ÷ 2 = **10**.'
       },
       {
         q: 'O número de anagramas da palavra ENEM é',
         alt: ['12', '24', '6', '4', '8'],
         c: 0, dif: 'medio',
-        exp: '4!/2! = 12, pois o símbolo repetido aparece duas vezes (ENEM tem dois "E").'
+        exp: '4!/2! = 12, pois o símbolo repetido aparece duas vezes (ENEM tem dois "E").',
+        res: '- ENEM tem 4 letras, mas o **E aparece 2 vezes**.\n- Permutação com repetição: 4! ÷ 2! = 24 ÷ 2.\n- = **12**.'
       },
       {
         q: 'Lançando duas moedas, a probabilidade de saírem duas caras é de',
         alt: ['1/4', '1/2', '1/3', '2/3', '3/4'],
         c: 0, dif: 'medio',
-        exp: '1/2 · 1/2 = 1/4.'
+        exp: '1/2 · 1/2 = 1/4.',
+        res: '- Os lançamentos são **independentes**: multiplica-se.\n- P(cara) · P(cara) = 1/2 · 1/2 = **1/4**.'
       },
       {
         q: 'Quantas senhas de 4 dígitos distintos podem ser formadas com os algarismos de 0 a 9?',
         alt: ['5.040', '10.000', '210', '40', '720'],
         c: 0, dif: 'dificil',
-        exp: '10 · 9 · 8 · 7 = 5.040.'
+        exp: '10 · 9 · 8 · 7 = 5.040.',
+        res: '- A ordem importa e **não pode repetir**: princípio multiplicativo.\n- 1º dígito: 10 opções; 2º: 9; 3º: 8; 4º: 7.\n- 10 · 9 · 8 · 7 = **5.040**.'
       },
       {
         q: 'A probabilidade de obter pelo menos uma cara em três lançamentos é de',
         alt: ['7/8', '1/8', '3/8', '1/2', '5/8'],
         c: 0, dif: 'dificil',
-        exp: '1 − (1/2)³ = 7/8.'
+        exp: '1 − (1/2)³ = 7/8.',
+        res: '- Usar o **complementar**: "pelo menos uma cara" = 1 − "nenhuma cara".\n- Nenhuma cara (3 coroas): (1/2)³ = 1/8.\n- P = 1 − 1/8 = **7/8**.'
       }
     ],
     pares: [
@@ -627,49 +667,57 @@ ENEM.temas('matematica', [
         q: 'A média dos números 4, 6, 8, 10 e 12 é',
         alt: ['8', '6', '10', '7', '9'],
         c: 0, dif: 'facil',
-        exp: 'Soma 40; 40/5 = 8.'
+        exp: 'Soma 40; 40/5 = 8.',
+        res: '- Some: 4 + 6 + 8 + 10 + 12 = 40.\n- Divida pela quantidade (5): 40 ÷ 5 = **8**.'
       },
       {
         q: 'A mediana do conjunto 3, 7, 5, 9, 1 é',
         alt: ['5', '7', '3', '9', '25'],
         c: 0, dif: 'facil',
-        exp: 'Ordenado: 1, 3, 5, 7, 9; o central é 5.'
+        exp: 'Ordenado: 1, 3, 5, 7, 9; o central é 5.',
+        res: '- **Ordene** os dados: 1, 3, 5, 7, 9.\n- Com 5 valores, a mediana é o do meio (3º): **5**.'
       },
       {
         q: 'A moda de 2, 3, 3, 4, 5, 3 é',
         alt: ['3', '2', '4', '5', '3,3'],
         c: 0, dif: 'facil',
-        exp: 'O 3 aparece três vezes.'
+        exp: 'O 3 aparece três vezes.',
+        res: '- Conte as repetições: 2 (1x), **3 (3x)**, 4 (1x), 5 (1x).\n- A moda é o valor mais frequente: **3**.'
       },
       {
         q: 'A mediana de 2, 4, 6 e 10 é',
         alt: ['5', '4', '6', '5,5', '22'],
         c: 0, dif: 'medio',
-        exp: 'Média dos centrais: (4 + 6)/2 = 5.'
+        exp: 'Média dos centrais: (4 + 6)/2 = 5.',
+        res: '- Os dados já estão ordenados: 2, 4, 6, 10.\n- São 4 valores (quantidade par) → média dos dois centrais: (4 + 6) ÷ 2.\n- = **5**.'
       },
       {
         q: 'Um aluno tem notas 6 (peso 2) e 9 (peso 3). A média ponderada é de',
         alt: ['7,8', '7,5', '8,0', '6,9', '7,0'],
         c: 0, dif: 'medio',
-        exp: '(12 + 27)/5 = 7,8.'
+        exp: '(12 + 27)/5 = 7,8.',
+        res: '- Média ponderada = soma(valor × peso) ÷ soma dos pesos.\n- Numerador: 6 · 2 + 9 · 3 = 12 + 27 = 39.\n- Denominador: 2 + 3 = 5 → 39 ÷ 5 = **7,8**.'
       },
       {
         q: 'Duas turmas têm a mesma média, mas a turma A tem desvio padrão maior. Isso indica que a turma A é',
         alt: ['mais heterogênea, com notas dispersas', 'mais homogênea, com notas próximas', 'necessariamente melhor que a B', 'necessariamente pior que a B', 'idêntica à B em dispersão'],
         c: 0, dif: 'dificil',
-        exp: 'Maior desvio padrão significa maior dispersão em torno da média.'
+        exp: 'Maior desvio padrão significa maior dispersão em torno da média.',
+        res: '- O **desvio padrão** mede o quanto os dados se afastam da média.\n- Maior desvio padrão = notas mais espalhadas = turma **mais heterogênea**.\n- A média igual não diz nada sobre a dispersão.'
       },
       {
         q: 'Em um grupo de salários com um valor extremamente alto, a medida mais representativa tende a ser',
         alt: ['a mediana', 'a amplitude', 'a média', 'o desvio padrão', 'o maior valor'],
         c: 0, dif: 'dificil',
-        exp: 'A mediana é pouco afetada por valores extremos.'
+        exp: 'A mediana é pouco afetada por valores extremos.',
+        res: '- Um salário muito alto (valor extremo) puxa a **média** para cima.\n- A **mediana** depende da posição central, e não do tamanho dos extremos.\n- Por isso a mediana representa melhor o grupo.'
       },
       {
         q: 'Num gráfico de setores com 400 entrevistados, o setor de 25% representa',
         alt: ['100 pessoas', '25 pessoas', '40 pessoas', '200 pessoas', '4 pessoas'],
         c: 0, dif: 'medio',
-        exp: '25% de 400 = 100.'
+        exp: '25% de 400 = 100.',
+        res: '- O gráfico de setores mostra partes de um todo (100% = 400).\n- 25% de 400 = 0,25 × 400 = **100 pessoas**.'
       }
     ],
     pares: [
@@ -735,49 +783,57 @@ ENEM.temas('matematica', [
         q: 'A solução da equação 2x + 7 = 19 é',
         alt: ['6', '13', '12', '5', '26'],
         c: 0, dif: 'facil',
-        exp: '2x = 12 → x = 6.'
+        exp: '2x = 12 → x = 6.',
+        res: '- Isole o termo com x: 2x = 19 − 7 = 12.\n- x = 12 ÷ 2 = **6**.\n- Confira: 2 · 6 + 7 = 19 ✓.'
       },
       {
         q: 'Se x + y = 10 e x − y = 2, os valores de x e y são, respectivamente,',
         alt: ['6 e 4', '8 e 2', '5 e 5', '7 e 3', '4 e 6'],
         c: 0, dif: 'facil',
-        exp: 'Somando: 2x = 12, x = 6; então y = 4.'
+        exp: 'Somando: 2x = 12, x = 6; então y = 4.',
+        res: '- **Some** as duas equações: (x + y) + (x − y) = 10 + 2 → 2x = 12.\n- x = **6**.\n- Substitua em x + y = 10: 6 + y = 10 → y = **4**.'
       },
       {
         q: 'Em uma PA com primeiro termo 3 e razão 4, o décimo termo é',
         alt: ['39', '43', '40', '36', '47'],
         c: 0, dif: 'medio',
-        exp: 'a₁₀ = 3 + 9·4 = 39.'
+        exp: 'a₁₀ = 3 + 9·4 = 39.',
+        res: '- Termo geral da PA: a_n = a₁ + (n − 1) · r.\n- a₁₀ = 3 + 9 · 4 = 3 + 36.\n- a₁₀ = **39**.'
       },
       {
         q: 'A soma dos números de 1 a 10 é',
         alt: ['55', '50', '45', '110', '60'],
         c: 0, dif: 'medio',
-        exp: '(1 + 10)·10/2 = 55.'
+        exp: '(1 + 10)·10/2 = 55.',
+        res: '- É uma PA: a₁ = 1, a₁₀ = 10, n = 10.\n- S = (a₁ + a_n) · n ÷ 2 = (1 + 10) · 10 ÷ 2.\n- S = 110 ÷ 2 = **55**.'
       },
       {
         q: 'Em uma PG com primeiro termo 2 e razão 3, o quinto termo é',
         alt: ['162', '486', '54', '30', '243'],
         c: 0, dif: 'medio',
-        exp: '2 · 3⁴ = 162.'
+        exp: '2 · 3⁴ = 162.',
+        res: '- Termo geral da PG: a_n = a₁ · q^(n − 1).\n- a₅ = 2 · 3⁴ = 2 · 81.\n- a₅ = **162**.'
       },
       {
         q: 'As raízes de x² − 4x − 5 = 0 são',
         alt: ['5 e −1', '−5 e 1', '4 e −5', '1 e 5', '−4 e 5'],
         c: 0, dif: 'dificil',
-        exp: 'Soma 4 e produto −5 correspondem a 5 e −1.'
+        exp: 'Soma 4 e produto −5 correspondem a 5 e −1.',
+        res: '- a = 1, b = −4, c = −5. Procure soma = 4 e produto = −5.\n- Números com produto −5: (5 e −1) ou (−5 e 1). A soma 4 vem de 5 + (−1).\n- Raízes: **5 e −1**.\n- Confira por Bháskara: Δ = 16 + 20 = 36 → x = (4 ± 6)/2 = 5 ou −1.'
       },
       {
         q: 'A solução da inequação 3x − 5 > 7 é',
         alt: ['x > 4', 'x < 4', 'x > 2', 'x > 12', 'x < 2'],
         c: 0, dif: 'dificil',
-        exp: '3x > 12 → x > 4.'
+        exp: '3x > 12 → x > 4.',
+        res: '- Some 5 aos dois lados: 3x > 12.\n- Divida por 3 (positivo, o sinal **não** inverte): x > 4.\n- Solução: **x > 4**.'
       },
       {
         q: 'Uma pessoa guarda R$ 50 no primeiro mês e aumenta R$ 10 a cada mês. Quanto guardará no 12º mês?',
         alt: ['R$ 160', 'R$ 170', 'R$ 150', 'R$ 120', 'R$ 180'],
         c: 0, dif: 'dificil',
-        exp: 'PA: a₁₂ = 50 + 11·10 = 160.'
+        exp: 'PA: a₁₂ = 50 + 11·10 = 160.',
+        res: '- Soma constante de 10 a cada mês → **PA** com a₁ = 50 e r = 10.\n- a₁₂ = 50 + 11 · 10 = 50 + 110.\n- a₁₂ = **R$ 160**.'
       }
     ],
     pares: [
@@ -843,49 +899,57 @@ ENEM.temas('matematica', [
         q: 'O MMC de 12 e 18 é',
         alt: ['36', '6', '72', '216', '24'],
         c: 0, dif: 'facil',
-        exp: '12 = 2²·3 e 18 = 2·3²; MMC = 2²·3² = 36.'
+        exp: '12 = 2²·3 e 18 = 2·3²; MMC = 2²·3² = 36.',
+        res: '- Fatore: 12 = 2² · 3 e 18 = 2 · 3².\n- MMC = fatores comuns e não comuns com o **maior** expoente: 2² · 3² = 4 · 9.\n- MMC = **36**.'
       },
       {
         q: 'Um carro percorre 150 km em 2 horas. A velocidade média é de',
         alt: ['75 km/h', '300 km/h', '150 km/h', '50 km/h', '65 km/h'],
         c: 0, dif: 'facil',
-        exp: '150/2 = 75.'
+        exp: '150/2 = 75.',
+        res: '- Velocidade média = distância ÷ tempo.\n- v = 150 ÷ 2 = **75 km/h**.'
       },
       {
         q: 'O número 0,00045 escrito em notação científica é',
         alt: ['4,5 × 10⁻⁴', '4,5 × 10⁴', '45 × 10⁻⁵', '4,5 × 10⁻³', '0,45 × 10⁻³'],
         c: 0, dif: 'medio',
-        exp: 'Deslocando a vírgula 4 casas para a direita: 4,5 × 10⁻⁴.'
+        exp: 'Deslocando a vírgula 4 casas para a direita: 4,5 × 10⁻⁴.',
+        res: '- Notação científica: a × 10ⁿ, com 1 ≤ a < 10.\n- Desloque a vírgula até 4,5: são 4 casas para a direita.\n- Vírgula para a direita → expoente **negativo**: 4,5 × 10⁻⁴.'
       },
       {
         q: 'Um carro faz 12 km por litro. Para percorrer 300 km, gastará',
         alt: ['25 L', '36 L', '2,5 L', '250 L', '15 L'],
         c: 0, dif: 'medio',
-        exp: '300/12 = 25.'
+        exp: '300/12 = 25.',
+        res: '- Consumo = distância ÷ rendimento.\n- 300 ÷ 12 = **25 L**.'
       },
       {
         q: 'Um ciclista a 36 km/h tem, em m/s, velocidade de',
         alt: ['10 m/s', '36 m/s', '3,6 m/s', '129,6 m/s', '100 m/s'],
         c: 0, dif: 'medio',
-        exp: '36/3,6 = 10.'
+        exp: '36/3,6 = 10.',
+        res: '- Conversão: km/h ÷ 3,6 = m/s.\n- 36 ÷ 3,6 = **10 m/s**.\n- (Por quê? 36 km/h = 36.000 m / 3.600 s = 10 m/s.)'
       },
       {
         q: 'Uma fita de 24 m e outra de 36 m serão cortadas em pedaços iguais, do maior tamanho possível. Cada pedaço terá',
         alt: ['12 m', '6 m', '4 m', '72 m', '3 m'],
         c: 0, dif: 'dificil',
-        exp: 'MDC(24, 36) = 12.'
+        exp: 'MDC(24, 36) = 12.',
+        res: '- Pedaços iguais, **do maior tamanho possível** → **MDC**.\n- 24 = 2³ · 3 e 36 = 2² · 3². MDC = fatores comuns com o **menor** expoente: 2² · 3 = 12.\n- Cada pedaço terá **12 m**.'
       },
       {
         q: 'Um evento ocorre a cada 3 horas e 45 minutos. Em minutos, esse intervalo é de',
         alt: ['225', '345', '180', '285', '45'],
         c: 0, dif: 'dificil',
-        exp: '3 · 60 + 45 = 225.'
+        exp: '3 · 60 + 45 = 225.',
+        res: '- 1 hora = 60 min → 3 h = 3 · 60 = 180 min.\n- Some os 45 min: 180 + 45 = **225 min**.'
       },
       {
         q: 'O valor de 2⁵ · 2³ é',
         alt: ['256', '64', '128', '16', '512'],
         c: 0, dif: 'dificil',
-        exp: '2⁸ = 256.'
+        exp: '2⁸ = 256.',
+        res: '- Mesma base: **some os expoentes**.\n- 2⁵ · 2³ = 2⁸.\n- 2⁸ = **256**.'
       }
     ],
     pares: [
@@ -951,49 +1015,57 @@ ENEM.temas('matematica', [
         q: 'Um capital de R$ 1.000 rende juros simples de 2% ao mês durante 6 meses. O montante é de',
         alt: ['R$ 1.120,00', 'R$ 1.020,00', 'R$ 1.200,00', 'R$ 1.126,16', 'R$ 1.060,00'],
         c: 0, dif: 'facil',
-        exp: 'J = 1.000 · 0,02 · 6 = 120; M = 1.120.'
+        exp: 'J = 1.000 · 0,02 · 6 = 120; M = 1.120.',
+        res: '- Juros simples: J = C · i · t.\n- J = 1.000 · 0,02 · 6 = 120.\n- Montante = capital + juros = 1.000 + 120 = **R$ 1.120,00**.'
       },
       {
         q: 'Um produto de R$ 500 tem 10% de desconto à vista. O preço final é de',
         alt: ['R$ 450,00', 'R$ 490,00', 'R$ 400,00', 'R$ 550,00', 'R$ 410,00'],
         c: 0, dif: 'facil',
-        exp: '500 · 0,9 = 450.'
+        exp: '500 · 0,9 = 450.',
+        res: '- Fator de desconto de 10% = 1 − 0,10 = 0,9.\n- 500 · 0,9 = **R$ 450,00**.'
       },
       {
         q: 'Um capital de R$ 1.000 aplicado a juros compostos de 10% ao ano, por 2 anos, resulta em',
         alt: ['R$ 1.210,00', 'R$ 1.200,00', 'R$ 1.100,00', 'R$ 1.020,00', 'R$ 1.220,00'],
         c: 0, dif: 'medio',
-        exp: '1.000 · 1,1² = 1.210.'
+        exp: '1.000 · 1,1² = 1.210.',
+        res: '- Juros compostos: M = C · (1 + i)^t.\n- M = 1.000 · (1,1)² = 1.000 · 1,21.\n- M = **R$ 1.210,00**.\n- (Em juros simples seriam R$ 1.200.)'
       },
       {
         q: 'Dois aumentos sucessivos de 10% equivalem a um aumento total de',
         alt: ['21%', '20%', '10%', '11%', '22%'],
         c: 0, dif: 'medio',
-        exp: '1,1 · 1,1 = 1,21.'
+        exp: '1,1 · 1,1 = 1,21.',
+        res: '- Cada aumento de 10% multiplica por 1,1.\n- Dois aumentos: 1,1 · 1,1 = 1,21.\n- 1,21 = +21% → **21%** (e não 20%).'
       },
       {
         q: 'Um produto custa R$ 900 à vista ou 3 parcelas de R$ 330. O valor total a prazo é maior em',
         alt: ['R$ 90,00', 'R$ 30,00', 'R$ 60,00', 'R$ 120,00', 'R$ 0,00'],
         c: 0, dif: 'medio',
-        exp: '3 · 330 = 990; 990 − 900 = 90.'
+        exp: '3 · 330 = 990; 990 − 900 = 90.',
+        res: '- Total a prazo: 3 · 330 = R$ 990.\n- Diferença: 990 − 900 = **R$ 90,00** (custo do parcelamento).'
       },
       {
         q: 'Um salário de R$ 2.000 recebe reajuste de 8%. O novo salário é de',
         alt: ['R$ 2.160,00', 'R$ 2.080,00', 'R$ 2.800,00', 'R$ 2.016,00', 'R$ 2.180,00'],
         c: 0, dif: 'dificil',
-        exp: '2.000 · 1,08 = 2.160.'
+        exp: '2.000 · 1,08 = 2.160.',
+        res: '- Fator de aumento de 8% = 1,08.\n- 2.000 · 1,08 = **R$ 2.160,00**.\n- (Ou: 8% de 2.000 = 160; 2.000 + 160.)'
       },
       {
         q: 'Em prazos longos, os juros compostos rendem mais que os simples porque',
         alt: ['incidem também sobre os juros já acumulados', 'incidem apenas sobre o capital inicial', 'não dependem do tempo', 'têm taxa sempre menor', 'são pagos uma única vez'],
         c: 0, dif: 'dificil',
-        exp: 'Os "juros sobre juros" tornam o crescimento exponencial.'
+        exp: 'Os "juros sobre juros" tornam o crescimento exponencial.',
+        res: '- Nos juros simples, os juros incidem só sobre o **capital inicial** (crescimento linear).\n- Nos compostos, os juros de cada período entram na base do período seguinte ("juros sobre juros"): crescimento **exponencial**.\n- Quanto maior o prazo, maior a diferença.'
       },
       {
         q: 'Uma loja anuncia "10% de desconto" seguido de "mais 10% de desconto". O desconto total é de',
         alt: ['19%', '20%', '10%', '21%', '9%'],
         c: 0, dif: 'dificil',
-        exp: '0,9 · 0,9 = 0,81, ou seja, 19% de desconto.'
+        exp: '0,9 · 0,9 = 0,81, ou seja, 19% de desconto.',
+        res: '- Cada desconto de 10% multiplica por 0,9.\n- 0,9 · 0,9 = 0,81 → o cliente paga 81%.\n- Desconto total: 100% − 81% = **19%** (e não 20%).'
       }
     ],
     pares: [

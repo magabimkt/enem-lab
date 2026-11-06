@@ -210,3 +210,7 @@ main { max-width: 920px; margin: 0 auto; padding: 18px 16px 90px; }
 .foot { max-width: 920px; margin: 0 auto; padding: 0 16px 40px; color: var(--mut); font-size: .82rem; }
 @media (max-width: 520px) { .app-head-in { flex-wrap: wrap; gap: .2rem .5rem; padding: .5rem 10px; } .nav { margin-left: 0; width: 100%; flex-wrap: nowrap; justify-content: space-between; } .nav a { padding: .4rem .45rem; font-size: .85rem; white-space: nowrap; } .brand { font-size: 1rem; } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }
+
+.res-passo { margin-top: 10px; border: 1px solid var(--line); border-radius: 12px; padding: 8px 12px; }
+.res-passo summary { cursor: pointer; font-weight: 600; }
+.res-passo-body { padding-top: 8px; } .res-passo-body p { margin: .35rem 0; }

@@ -18,7 +18,8 @@ Edite só o arquivo `data/d-<disciplina>.js`. Cada tema segue o modelo de `data/
 - `pegadinhas`, `dicas`: listas de frases
 - `exemplo`: `{ enunciado, resolucao }`
 - `flashcards`: `[{ f, v }]` (frente e verso)
-- `quiz`: `[{ q, alt: [5 alternativas], c: índice da certa (0-4), exp, dif: 'facil'|'medio'|'dificil' }]`
+- `quiz`: `[{ q, alt: [5 alternativas], c: índice da certa (0-4), exp, res (opcional), dif: 'facil'|'medio'|'dificil' }]`
+  - `res` (opcional): resolução passo a passo, mostrada recolhida após o gabarito; é uma lista de passos (cada passo vira um item) e o validador avisa quando falta em Matemática, Física e Química
   - as alternativas são embaralhadas; a explicação **não** pode citar letras (use `fixa: true` se houver "todas as anteriores")
 - `pares`: `[{ a: termo, b: definição curta }]` (usados na memória e na ligação)
 - `fontes`: `[{ titulo, url }]`
