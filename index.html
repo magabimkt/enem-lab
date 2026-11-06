@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ENEM Lab — estude com ciência</title>
+<meta name="description" content="Quizzes, flashcards, jogo da memória e ligação de conceitos para o ENEM, com revisão espaçada.">
+<meta name="theme-color" content="#0B1220">
+<script>try{var c=JSON.parse(localStorage.getItem("enemlab_v1")||"{}").cfg||{},t=c.tema||"escuro";if(t==="auto")t=matchMedia("(prefers-color-scheme: light)").matches?"claro":"escuro";document.documentElement.dataset.tema=t;document.documentElement.style.fontSize=(c.fonte||100)+"%"}catch(e){}</script>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="app-head"><div class="app-head-in">
+  <a class="brand" href="#/">ENEM <span>Lab</span></a>
+  <nav class="nav" aria-label="Principal">
+    <a href="#/" data-nav="home">Início</a>
+    <a href="#/misto" data-nav="misto">Quiz misto</a>
+    <a href="#/dicas" data-nav="dicas">Dicas</a>
+    <a href="#/progresso" data-nav="progresso">Progresso</a>
+  </nav>
+</div></header>
+<main id="view" tabindex="-1"></main>
+<p class="foot">Seu progresso fica salvo somente neste aparelho. Use "Progresso → Exportar" para fazer backup.</p>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript><p style="padding:16px">Ative o JavaScript para usar o ENEM Lab.</p></noscript>
+
+<script src="js/util.js"></script>
+<script src="js/store.js"></script>
+<script src="data/registry.js"></script>
+<script src="data/dicas.js"></script>
+<script src="data/d-artes-tic.js"></script>
+<script src="data/d-biologia.js"></script>
+<script src="data/d-estrangeira.js"></script>
+<script src="data/d-filosofia.js"></script>
+<script src="data/d-fisica.js"></script>
+<script src="data/d-geografia.js"></script>
+<script src="data/d-historia.js"></script>
+<script src="data/d-literatura.js"></script>
+<script src="data/d-matematica.js"></script>
+<script src="data/d-portugues.js"></script>
+<script src="data/d-quimica.js"></script>
+<script src="data/d-redacao.js"></script>
+<script src="data/d-sociologia.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/flash.js"></script>
+<script src="js/memory.js"></script>
+<script src="js/match.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
