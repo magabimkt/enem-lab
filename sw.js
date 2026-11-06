@@ -1,5 +1,5 @@
 /* ENEM Lab — service worker (cache primeiro, atualiza em segundo plano) */
-var CACHE = 'enemlab-v6';
+var CACHE = 'enemlab-v9';
 var ARQUIVOS = [
   './',
   './index.html',

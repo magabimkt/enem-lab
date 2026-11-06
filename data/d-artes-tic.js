@@ -640,7 +640,7 @@
         },
         {
           q: 'O Marco Civil da Internet (2014) é importante porque',
-          alt: ['fixa princípios, direitos e deveres para a internet', 'proíbe o acesso à rede no país', 'cria impostos sobre mensagens', 'extingue as redes sociais', 'só trata de comércio eletrônico'],
+          alt: ['fixa princípios e direitos na internet', 'proíbe o acesso à rede no país', 'cria impostos sobre mensagens', 'extingue as redes sociais', 'só trata de comércio eletrônico'],
           c: 0, dif: 'dificil',
           exp: 'A lei fixa princípios como liberdade de expressão, privacidade e neutralidade da rede.'
         }

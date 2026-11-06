@@ -5,6 +5,21 @@
   var LETRAS = ['A', 'B', 'C', 'D', 'E'];
   var DIF = { facil: 'Fácil', medio: 'Médio', dificil: 'Difícil' };
 
+  /* Bloco recolhível com o conteúdo do tema da questão (resumo, conceitos, pegadinhas).
+     Não muda de página: o aluno revisa e continua o quiz de onde parou. */
+  function revisar(p) {
+    var t = p.tema, d = p.disc;
+    if (!t || !t.conceitos || !t.conceitos.length) return null;
+    return el('details', { class: 'rev-conteudo' },
+      el('summary', null, '📖 Revisar o conteúdo: ' + t.nome),
+      el('div', { class: 'rev-conteudo-body' },
+        t.resumo ? el('p', { class: 'hint' }, U.rich(t.resumo)) : null,
+        t.conceitos.map(function (c) { return el('div', { class: 'study-block' }, el('h3', null, c.titulo), U.texto(c.texto)); }),
+        (t.pegadinhas && t.pegadinhas.length) ? el('div', { class: 'study-block' }, el('h3', null, '⚠️ Pegadinhas comuns'),
+          el('ul', null, t.pegadinhas.map(function (x) { return el('li', null, U.rich(x)); }))) : null,
+        el('p', { class: 'hint' }, el('a', { href: '#/tema/' + d.id + '/' + t.id, target: '_blank', rel: 'noopener' }, 'Abrir o tema completo em outra aba ↗'))));
+  }
+
   function run(box, opt) {
     var P = opt.perguntas.slice();
     var i = 0, feitas = [], respondida = false, teclas = null;
@@ -54,7 +69,8 @@
         fb.replaceChildren(
           el('div', { class: 'fb-head ' + (ok ? 'ok' : 'err') }, ok ? '✅ Correto' : '❌ Não foi dessa vez'),
           ok ? null : el('p', { class: 'fb-ans' }, 'Resposta certa: ', el('strong', null, U.rich(p.alt[p.c]))),
-          el('div', { class: 'fb-exp' }, U.rich(p.exp)));
+          el('div', { class: 'fb-exp' }, U.rich(p.exp)),
+          ok ? null : revisar(p));
         prox.hidden = false;
         prox.focus({ preventScroll: true });
         if (fb.scrollIntoView) fb.scrollIntoView({ block: 'nearest' });
@@ -153,7 +169,8 @@
               el('div', { class: 'rev-body' },
                 el('p', null, el('strong', null, 'Resposta certa: '), U.rich(f.p.alt[f.p.c])),
                 el('p', null, U.rich(f.p.exp)),
-                el('p', { class: 'hint' }, f.p.disc.emoji + ' ' + f.p.disc.nome + ' · ' + f.p.tema.nome)));
+                el('p', { class: 'hint' }, f.p.disc.emoji + ' ' + f.p.disc.nome + ' · ' + f.p.tema.nome),
+                revisar(f.p)));
           })) : null);
       if (box.scrollIntoView) box.scrollIntoView({ block: 'start' });
     }

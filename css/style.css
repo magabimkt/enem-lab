@@ -157,6 +157,9 @@ main { max-width: 920px; margin: 0 auto; padding: 18px 16px 90px; }
 .by-disc-row { display: flex; justify-content: space-between; padding: .3rem .6rem; border-left: 3px solid var(--ac); background: var(--bg2); margin-bottom: 4px; border-radius: 6px; }
 .rev-item { border-top: 1px solid var(--line); padding: .5rem 0; } .rev-item summary { cursor: pointer; }
 .rev-body { padding: .5rem 0 0 .5rem; }
+.rev-conteudo { margin-top: 10px; border: 1px solid var(--line); border-radius: 12px; padding: 8px 12px; background: var(--bg2); }
+.rev-conteudo summary { cursor: pointer; font-weight: 600; }
+.rev-conteudo-body { padding-top: 8px; } .rev-conteudo-body ul { margin: .3rem 0 0 1.1rem; padding: 0; }
 .pares-list { text-align: left; margin: .8rem 0; display: grid; gap: 6px; }
 .par-row { display: flex; gap: .5rem; flex-wrap: wrap; align-items: baseline; border-left: 3px solid var(--ac); background: var(--bg2); padding: .45rem .7rem; border-radius: 8px; }
 .seta { color: var(--mut); }
